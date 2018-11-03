@@ -27,7 +27,7 @@ mvn clean install -Dmaven.test.skip=true
 killTomcat
 
 #备份原有工程
-cp $TOMCAT_APP_PATH/webapps/jenkins-test-0.0.1-SNAPSHOT.war  $TOMCAT_APP_PATH/backup/jenkins-test-0.0.1-SNAPSHOT.war.`date +%Y%m%d%H%M`
+cp $TOMCAT_APP_PATH/webapps/jenkins-test.war  $TOMCAT_APP_PATH/backup/jenkins-test.war.`date +%Y%m%d%H%M`
 
 # 删除原有工程
 #rm -rf $TOMCAT_APP_PATH/webapps/ROOT

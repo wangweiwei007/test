@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#编译+部署order站点
+#编译+部署jenkins-test站点
 
 #需要配置如下参数
 # 项目路径, 在Execute Shell中配置项目路径, pwd 就可以获得该项目路径
@@ -39,7 +39,7 @@ rm -rf $TOMCAT_APP_PATH/webapps/*
 cp $PROJ_PATH/jenkins-test/target/jenkins-test-0.0.1-SNAPSHOT.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
-mv jenkins-test-0.0.1-SNAPSHOT.war ROOT.war
+mv jenkins-test-0.0.1-SNAPSHOT.war jenkins-test.war
 
 # 启动Tomcat
 cd $TOMCAT_APP_PATH/

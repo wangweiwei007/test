@@ -40,7 +40,7 @@ mv jenkins-test-0.0.1-SNAPSHOT.war jenkins-test.war
 
 # 启动Tomcat
 cd $TOMCAT_APP_PATH/
-sh bin/startup.sh ; tail -f logs/catalina.out
+sh bin/startup.sh run
 
 
 
